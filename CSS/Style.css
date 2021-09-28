@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Are+You+Serious&family=Press+Start+2P&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #490139;
+    color: rgb(185, 47, 5);
+    font-family: 'Press Start 2P', cursive;
+    overflow: hidden;
+}
+
+
+.container{
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+
+.header{
+    font-family: 'Are You Serious', cursive;
+    height: 250px;
+    text-align: center;
+
+}
+
+
+.header h1{
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    animation-name: header;
+    animation-duration: 3s;
+    position: relative;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes header{
+    0% {top: -100px;}
+    100% {top: 150px;}
+}
+
+.main{
+    margin: 2rem 0;
+
+}
+
+.TextLeft{
+    text-align: justify;
+    position: relative;
+    animation: TextLeft;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes TextLeft {
+    0% {left: -2000px;}
+    85%{left: 50px;}
+    100%{left: 0;}
+}
+
+.TextRight{
+    margin-top: 2rem;
+    text-align: right;
+    text-justify: auto;
+    position: relative;
+    animation: TextRight;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes TextRight {
+    0% {right: -2000px;}
+    85%{right: 50px;}
+    100%{right: 0;}
+}
+
+.footer{
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    opacity: 0;
+    color: rgb(72, 255, 0);
+    text-decoration: none;
+    padding: 1rem;
+    border: 2px solid wheat;
+    text-transform: uppercase;
+    animation-name: Btnani;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Btnani {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
